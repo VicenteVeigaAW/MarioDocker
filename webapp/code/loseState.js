@@ -33,10 +33,16 @@ Mario.LoseState.prototype.Enter = function() {
     this.font2.Strings[0] = { String: "a lot of", X: 20, Y: 80 };
     this.font3 = Mario.SpriteCuts.CreateBlackFont();
     this.font3.Strings[0] = { String: "RABAX", X: 20, Y: 100 };
+    this.font4 = Mario.SpriteCuts.CreateBlackFont();
+    this.font4.Strings[0] = { String: "Press S", X: 20, Y: 180 };
+    this.font5 = Mario.SpriteCuts.CreateBlackFont();
+    this.font5.Strings[0] = { String: "to restart", X: 20, Y: 180 };
     
     this.drawManager.Add(this.font);
     this.drawManager.Add(this.font2);
     this.drawManager.Add(this.font3);
+    this.drawManager.Add(this.font4);
+    this.drawManager.Add(this.font5);
     this.drawManager.Add(this.gameOver);
 };
 

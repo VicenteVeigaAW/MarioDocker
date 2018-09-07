@@ -23,14 +23,17 @@ Mario.LoseState.prototype.Enter = function() {
     this.gameOver.SetRowCount(1);
     this.gameOver.AddNewSequence("turnLoop", 0, 0, 0, 8);
     this.gameOver.PlaySequence("turnLoop", true);
-    this.gameOver.FramesPerSecond = 1/15;
+    this.gameOver.FramesPerSecond = 1/5;
     this.gameOver.X = 112;
-    this.gameOver.Y = 68;
+    this.gameOver.Y = 36;
     
     this.font = Mario.SpriteCuts.CreateBlackFont();
-    this.font.Strings[0] = { String: "Game over!", X: 116, Y: 160 };
+    this.font.Strings[0] = { String: "RABAX", X: 20, Y: 60 };
+    this.font2 = Mario.SpriteCuts.CreateBlackFont();
+    this.font2.Strings[0] = { String: "call basis!", X: 220, Y: 60 };
     
     this.drawManager.Add(this.font);
+    this.drawManager.Add(this.font2);
     this.drawManager.Add(this.gameOver);
 };
 

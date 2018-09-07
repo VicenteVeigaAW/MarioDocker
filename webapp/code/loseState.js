@@ -19,7 +19,7 @@ Mario.LoseState.prototype.Enter = function() {
     
     this.gameOver = new Enjine.AnimatedSprite();
     this.gameOver.Image = Enjine.Resources.Images["gameOverGhost"];
-    this.gameOver.SetColumnCount(9);
+    this.gameOver.SetColumnCount(3);
     this.gameOver.SetRowCount(1);
     this.gameOver.AddNewSequence("turnLoop", 0, 0, 0, 8);
     this.gameOver.PlaySequence("turnLoop", true);
@@ -28,12 +28,15 @@ Mario.LoseState.prototype.Enter = function() {
     this.gameOver.Y = 36;
     
     this.font = Mario.SpriteCuts.CreateBlackFont();
-    this.font.Strings[0] = { String: "Mario made RABAX", X: 20, Y: 60 };
+    this.font.Strings[0] = { String: "Mario made", X: 20, Y: 60 };
     this.font2 = Mario.SpriteCuts.CreateBlackFont();
-    this.font2.Strings[0] = { String: "Game over!", X: 220, Y: 60 };
+    this.font2.Strings[0] = { String: "a lot of", X: 20, Y: 80 };
+    this.font3 = Mario.SpriteCuts.CreateBlackFont();
+    this.font3.Strings[0] = { String: "RABAX", X: 20, Y: 100 };
     
     this.drawManager.Add(this.font);
     this.drawManager.Add(this.font2);
+    this.drawManager.Add(this.font3);
     this.drawManager.Add(this.gameOver);
 };
 

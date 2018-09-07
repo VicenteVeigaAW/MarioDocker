@@ -36,7 +36,7 @@ Mario.LoseState.prototype.Enter = function() {
     this.font4 = Mario.SpriteCuts.CreateBlackFont();
     this.font4.Strings[0] = { String: "Press S", X: 20, Y: 180 };
     this.font5 = Mario.SpriteCuts.CreateBlackFont();
-    this.font5.Strings[0] = { String: "to restart", X: 20, Y: 180 };
+    this.font5.Strings[0] = { String: "to restart", X: 20, Y: 200 };
     
     this.drawManager.Add(this.font);
     this.drawManager.Add(this.font2);

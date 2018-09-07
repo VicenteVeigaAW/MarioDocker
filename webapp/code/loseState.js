@@ -28,9 +28,9 @@ Mario.LoseState.prototype.Enter = function() {
     this.gameOver.Y = 36;
     
     this.font = Mario.SpriteCuts.CreateBlackFont();
-    this.font.Strings[0] = { String: "RABAX", X: 20, Y: 60 };
+    this.font.Strings[0] = { String: "Mario made RABAX", X: 20, Y: 60 };
     this.font2 = Mario.SpriteCuts.CreateBlackFont();
-    this.font2.Strings[0] = { String: "call basis!", X: 220, Y: 60 };
+    this.font2.Strings[0] = { String: "Game over!", X: 220, Y: 60 };
     
     this.drawManager.Add(this.font);
     this.drawManager.Add(this.font2);
